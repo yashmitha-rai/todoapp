@@ -3,37 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todoapp</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Todo App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-<body class="w-full h-screen bg-gradient-to-b
-from-blue-300 to-purple-300">
-    <main class=" bg-green-400 h-screen w-[40%] mx-auto 
-    flex items-center justify-center">
+
+
+<body class="w-full h-screen bg-gradient-to-tr from-blue-300 to-purple-400">  <!--instead of h-full(for child it wont take full screen) hscreen is used br is used for alignment of clr-->
+    <main class="h-screen bg-blue-500 w-[40%] mx-auto flex items-center justify-center"> <!--to perform all the things in one page mx-auto used to align the clr at center for using %[] is used-->
+    <!--Todo App Container-->
+    <div class="w-[80%] h-[90%] bg-white rounded-lg"> <!--for hight vh nd rem can be used-->
+    <h3 class="text-center font-bold mt-2 text-2xl my-3">Todo App</h3>
+    <div class="flex w-full px-4 justify-center gap-2">
+
+        <input id="taskInput" class="border-2 w-[80%] py-3 flex justify-center rounded-md"  type="text">
+        <button onclick="add()" class="bg-blue-400 px-3 font-bold text-white rounded-md"><i class="ri-add-line"></i></button> <!--rounded is used to round the margin-->
+    </div>
+
+    <div  id="taskContainer" class="bg-gray-300 mx-auto w-[90%] h-[75%] flex-col mt-5 flex gap-3">
+        
+    </div>
+    </div>
+    </main> 
     
-    <div class="w-[80%] h-[90%] bg-white rounded-lg">
-    <h3 class="text-center font-bold my-3">Todo App</h3>
-
-     <div class="flex w-full px-2 gap-4">
-        <input id="taskInput" class=" rounded-md border-2  ml-3 w-[80%] flex justify-center" type="text">
-        <button onClick="add()" class="bg-blue-500 rounded-md font-bold px-2"><i class="ri-add-line"></i></button>
-     </div>
-<div  id="taskContainer" class=" mx-auto w-[90%] h-[75%] mt-2 flex flex-col gap-2">
-    <div class="w-full h-16 flex items-center justify-between  px-2">
-    <p>Task 1</p>
-    <span class="w-10 h-8 "><i class="ri-delete-bin-fill"></i></span>
-    </div>
-
-    <div class="w-full h-16 flex justify-between items-center px-2">
-    <p> Task 1</p>
-   <span class="w-10 h-8 "><i class="ri-delete-bin-fill"></i></span> 
-</div>
-</div>
+<script src="script.js"></script>
 
 
-    </div>
-    </main>
-    <script src="script.js"></script>
 </body>
 </html>
