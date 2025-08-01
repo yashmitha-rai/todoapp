@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoapp</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body class="w-full h-screen bg-gradient-to-b
+from-blue-300 to-purple-300">
+    <main class=" bg-green-400 h-screen w-[40%] mx-auto 
+    flex items-center justify-center">
+    
+    <div class="w-[80%] h-[90%] bg-white rounded-lg">
+    <h3 class="text-center font-bold my-3">Todo App</h3>
+
+     <div class="flex w-full px-2 gap-4">
+        <input id="taskInput" class=" rounded-md border-2  ml-3 w-[80%] flex justify-center" type="text">
+        <button onClick="add()" class="bg-blue-500 rounded-md font-bold px-2"><i class="ri-add-line"></i></button>
+     </div>
+<div  id="taskContainer" class=" mx-auto w-[90%] h-[75%] mt-2 flex flex-col gap-2">
+    <div class="w-full h-16 flex items-center justify-between  px-2">
+    <p>Task 1</p>
+    <span class="w-10 h-8 "><i class="ri-delete-bin-fill"></i></span>
+    </div>
+
+    <div class="w-full h-16 flex justify-between items-center px-2">
+    <p> Task 1</p>
+   <span class="w-10 h-8 "><i class="ri-delete-bin-fill"></i></span> 
+</div>
+</div>
+
+
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
